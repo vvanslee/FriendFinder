@@ -17,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/vvanslee/FriendFinder/issues"
   },
-  "homepage": "https://github.com/vvanslee/FriendFinder#readme"
+  "homepage": "https://github.com/vvanslee/FriendFinder#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4"
+  }
 }
