@@ -1,12 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Survey</title>
+	<meta charset="UTF-8">
+        <title>FriendFinder Survey</title>
+        <!-- Latest compiled and minified CSS & JS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>       
 </head>
+
 <body>
-    
+    <div class='container'>
+
+        <div class="panel-body">
+            <form id="form">
+
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <p>Name (required)</p>
+                        <input type="text" id="name">
+                        <p>Link to Photo Image (Required)</p>
+                        <input type="text" id="photo">
+                    </div>
+                </div>
+
+                <br>
+                <h4>Rate the following statements</h4>
+
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="question">
+                            <p>I take a logical approach to problem solving.</p>
+                            <select data-placeholder="" class="chosen-select" id="q1">
+                                <option value=""></option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                        </div>
+            
+                        <div class="question">
+                            <p>I prefer to spend money on travel, rather than material goods.</p>
+                            <select data-placeholder="" class="chosen-select" id="q2">
+                                <option value=""></option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                        </div>
+            
+                        <div class="question">
+                            <p>When at a party, I can talk to anyone.</p>
+                            <select data-placeholder="" class="chosen-select" id="q3">
+                                <option value=""></option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                        </div>
+            
+                        <div class="question">
+                            <p>I enjoy spending time in nature.</p>
+                            <select data-placeholder="" class="chosen-select" id="q4">
+                                <option value=""></option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                        </div>
+            
+                        <div class="question">
+                            <p>I appreciate the value and purpose of art.</p>
+                            <select data-placeholder="" class="chosen-select" id="q5">
+                                <option value=""></option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                        </div>
+            
+                        <div class="question">
+                            <p>I often find myself people watching.</p>
+                            <select data-placeholder="" class="chosen-select" id="q6">
+                                <option value=""></option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                        </div>
+            
+                        <div class="question">
+                            <p>An ocean is more beautiful than a mountain range</p>
+                            <select data-placeholder="" class="chosen-select" id="q7">
+                                <option value=""></option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                        </div>
+            
+                        <div class="question">
+                            <p>I prefer a small music venue over a large festival.</p>
+                            <select data-placeholder="" class="chosen-select" id="q8">
+                                <option value=""></option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                        </div>
+            
+                        <div class="question">
+                            <p>I like a variety of cuisines.</p>
+                            <select data-placeholder="" class="chosen-select" id="q9">
+                                <option value=""></option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                        </div>
+            
+                        <div class="question">
+                            <p>My friends would say I am imaginative.</p>
+                            <select data-placeholder="" class="chosen-select" id="q10">
+                                <option value=""></option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>    
+                        </div>
+
+                    </div>
+                </div>
+           
+                <input type="submit" id="submit">
+
+            </form>
+        </div>
+    </div>
+
+    <div class="modal fade">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">We found you a friend!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>

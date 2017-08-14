@@ -19,7 +19,7 @@ module.exports = function(app) {
   // ---------------------------------------------------------------------------
 
   app.get("/api/friends", function(req, res) {
-    res.json(tableData);
+    res.json(friends);
   });
 
   // API POST Requests
@@ -40,13 +40,4 @@ module.exports = function(app) {
   });
 
   // ---------------------------------------------------------------------------
-  // I added this below code so you could clear out the table while working with the functionality.
-  // Don"t worry about it!
-
-  app.post("/api/clear", function() {
-    // Empty out the arrays of data
-    friends = [];
-
-    console.log(friends);
-  });
 };
